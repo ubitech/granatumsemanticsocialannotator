@@ -324,6 +324,8 @@ extends HttpServlet
         out.flush();
     }    
     */
+
+
     protected void editAnnotation(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException, XmlRpcException
     {
