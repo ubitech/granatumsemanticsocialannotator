@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sparql>
+	<head>
+		<variable name="Type"/>
+		<variable name="URI"/>
+		<variable name="Label"/>
+		<variable name="Description"/>
+	</head>
+	<results>
+		<result>
+			<binding name="Type">
+				<uri>http://chem.deri.ie/granatum/PublishedWork</uri>
+			</binding>
+			<binding name="URI">
+				<uri></uri>
+			</binding>
+			<binding name="Label">
+				<literal>Document1</literal>
+			</binding>
+			<binding name="Description">
+				<literal>Description1</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Type">
+				<uri>http://chem.deri.ie/granatum/PublishedWork</uri>
+			</binding>
+			<binding name="URI">
+				<uri></uri>
+			</binding>
+			<binding name="Label">
+				<literal>Document2</literal>
+			</binding>
+			<binding name="Description">
+				<literal>Description2</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Type">
+				<uri>http://chem.deri.ie/granatum/PublishedWork</uri>
+			</binding>
+			<binding name="URI">
+				<uri></uri>
+			</binding>
+			<binding name="Label">
+				<literal>Document3</literal>
+			</binding>
+			<binding name="Description">
+				<literal>Description3</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Type">
+				<uri>http://chem.deri.ie/granatum/diagram2D</uri>
+			</binding>
+			<binding name="URI">
+				<uri>../resources/samples/image1.jpg</uri>
+			</binding>
+			<binding name="Label">
+				<literal>Image1</literal>
+			</binding>
+			<binding name="Description">
+				<literal>Description1</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Type">
+				<uri>http://chem.deri.ie/granatum/diagram2D</uri>
+			</binding>
+			<binding name="URI">
+				<uri>../resources/samples/image2.jpg</uri>
+			</binding>
+			<binding name="Label">
+				<literal>Image2</literal>
+			</binding>
+			<binding name="Description">
+				<literal>Description2</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Type">
+				<uri>http://chem.deri.ie/granatum/diagram2D</uri>
+			</binding>
+			<binding name="URI">
+				<uri>../resources/samples/image3.jpg</uri>
+			</binding>
+			<binding name="Label">
+				<literal>Image3</literal>
+			</binding>
+			<binding name="Description">
+				<literal>Description3</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Type">
+				<uri>http://chem.deri.ie/granatum/ForumPost</uri>
+			</binding>
+			<binding name="URI">
+				<uri></uri>
+			</binding>
+			<binding name="Label">
+				<literal>Forum post1</literal>
+			</binding>
+			<binding name="Description">
+				<literal>Description1</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Type">
+				<uri>http://chem.deri.ie/granatum/ForumPost</uri>
+			</binding>
+			<binding name="URI">
+				<uri></uri>
+			</binding>
+			<binding name="Label">
+				<literal>Forum post2</literal>
+			</binding>
+			<binding name="Description">
+				<literal>Description2</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Type">
+				<uri>http://chem.deri.ie/granatum/ForumPost</uri>
+			</binding>
+			<binding name="URI">
+				<uri></uri>
+			</binding>
+			<binding name="Label">
+				<literal>Forum post3</literal>
+			</binding>
+			<binding name="Description">
+				<literal>Description3</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Type">
+				<uri>http://chem.deri.ie/granatum/ClinicalTrial</uri>
+			</binding>
+			<binding name="URI">
+				<uri></uri>
+			</binding>
+			<binding name="Label">
+				<literal>Clinical Part1</literal>
+			</binding>
+			<binding name="Description">
+				<literal>Description1</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Type">
+				<uri>http://chem.deri.ie/granatum/ClinicalTrial</uri>
+			</binding>
+			<binding name="URI">
+				<uri></uri>
+			</binding>
+			<binding name="Label">
+				<literal>Clinical Part2</literal>
+			</binding>
+			<binding name="Description">
+				<literal>Description2</literal>
+			</binding>
+		</result>
+		<result>
+		<binding name="Type">
+				<uri>http://chem.deri.ie/granatum/ClinicalTrial</uri>
+			</binding>
+			<binding name="URI">
+				<uri></uri>
+			</binding>
+			<binding name="Label">
+				<literal>Clinical Part3</literal>
+			</binding>
+			<binding name="Description">
+				<literal>Description3</literal>
+			</binding>
+		</result>	
+	</results>
+</sparql>

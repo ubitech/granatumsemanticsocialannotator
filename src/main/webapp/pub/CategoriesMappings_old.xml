@@ -1,0 +1,46 @@
+<CategoriesMapping xmlns="http://categorynamespace.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://categorynamespace.com CategoriesMappings.xsd">
+	<category>
+			<name>Experimental Data</name>
+			<mappings>
+				<mapping>
+					<mimetype>default</mimetype>
+					<sparql>select%20distinct%20?type%20where{%5B%5D%20a%20?type}</sparql>
+				</mapping>                            
+				<mapping>
+					<mimetype>text/html</mimetype>
+					<sparql>select%20distinct%20?type%20where{%5B%5D%20a%20?type}</sparql>
+				</mapping>
+				<mapping>
+					<mimetype>Article_annotation</mimetype>
+					<sparql>select%20distinct%20?type%20where{%5B%5D%20a%20?type}</sparql>
+				</mapping>                                
+				<mapping>
+					<mimetype>application/word</mimetype>
+					<sparql>select%20distinct%20?type%20where{%5B%5D%20a%20?type}</sparql>
+                                        
+<!--                                        <sparql>PREFIX rdfs:%3Chttp://www.w3.org/2000/01/rdf-schema#%3EPREFIX granatum:%3Chttp://granatum.org/schema/%3E PREFIX xsd:%3Chttp://www.w3.org/2001/XMLSchema#%3E PREFIX dc:%3Chttp://purl.org/dc/terms/%3E select ?study ?studyDescription where { ?study a granatum:Study. ?study dc:description ?studyDescription .}</sparql> 
+
+					<sparql>PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX%20granatum%3A%20%3Chttp%3A%2F%2Fgranatum.org%2Fschema%2F%3E%0D%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0Aselect%20%3Fbioassay%20%3Fcmalabel%20(str(%3FpercInhibition)%20as%20%3Finhibition)%20where%20{%0D%0A%3Fbioassay%20a%20granatum%3ABioassay%20%3B%0D%0A%20%20%20%20%20%20%20%20%20granatum%3Aused_cma%20%3Fcma%20%3B%0D%0A%20%20%20%20%20%20%20++granatum%3Amax_percent_inhibition+%3FpercInhibition+.%0D%0A%0D%0A%3Fcma+rdfs%3Alabel+%3Fcmalabel+.%0D%0A%0D%0Afilter+(xsd%3Adecimal(str(%3FpercInhibition))+>+50)%0D%0A%0D%0A}</sparql> -->
+				</mapping>				
+				<mapping>
+					<mimetype>video/mpeg</mimetype>
+					<sparql>select ?o where {?o prop ?y}</sparql>
+				</mapping>				
+			</mappings>
+	</category>
+	<category>
+			<name>Protocols</name>
+			<mappings>
+				<mapping>
+					<mimetype>default</mimetype>
+					<sparql>select%20distinct%20?type%20where{%5B%5D%20a%20?type}</sparql>
+				</mapping>                            
+				<mapping>
+					<mimetype>application/word</mimetype>
+					<sparql>select ?x where {?x prop ?y}</sparql>
+				</mapping>
+			</mappings>
+	</category>	
+</CategoriesMapping>

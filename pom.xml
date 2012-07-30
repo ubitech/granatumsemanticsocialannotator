@@ -1,0 +1,186 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>annotator.granatum</groupId>
+  <artifactId>annotator</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Granatum Semantic Social Annotator</name>
+
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+
+    <!-- JUnit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8</version>
+    </dependency>
+
+
+      <!-- SL4J Abstraction -->
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>1.6.5</version>
+      </dependency>
+
+    <!-- SL4J-log4j Bridge-->
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-log4j12</artifactId>
+          <version>1.6.5</version>
+      </dependency>
+
+      <!-- Servlet -->
+
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>servlet-api</artifactId>
+          <version>2.5</version>
+          <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+          <groupId>javax</groupId>
+          <artifactId>javaee-api</artifactId>
+          <version>6.0</version>
+      </dependency>
+
+    <!-- Apache Http -->
+      <dependency>
+          <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpclient</artifactId>
+          <version>4.0</version>
+      </dependency>
+
+      <dependency>
+          <groupId>commons-httpclient</groupId>
+          <artifactId>commons-httpclient</artifactId>
+          <version>3.1</version>
+      </dependency>
+
+      <dependency>
+          <groupId>xerces</groupId>
+          <artifactId>xercesImpl</artifactId>
+          <version>2.10.0</version>
+      </dependency>
+
+      <dependency>
+          <groupId>net.sf.json-lib</groupId>
+          <artifactId>json-lib</artifactId>
+          <version>2.4</version>
+          <classifier>jdk15</classifier>
+      </dependency>
+
+      <dependency>
+          <groupId>xmlrpc</groupId>
+          <artifactId>xmlrpc-client</artifactId>
+          <version>3.0</version>
+      </dependency>
+
+      <!-- MySQL -->
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>5.1.21</version>
+      </dependency>
+
+
+  </dependencies>
+
+    <build>
+        <finalName>annotator</finalName>
+
+        <plugins>
+            <!-- Test plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/Test*.java</include>
+                    </includes>
+                </configuration>
+
+            </plugin>
+
+
+            <!-- Transfer to JBOSS Plugin-->
+
+            <plugin>
+                <groupId>org.jboss.as.plugins</groupId>
+                <artifactId>jboss-as-maven-plugin</artifactId>
+                <version>7.1.1.Final</version>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+
+                        <!-- patroklos configuration  -->
+                        <configuration>
+                            <hostname>192.168.1.201</hostname>
+                            <port>9999</port>
+
+                            <username>admin</username>
+                            <password>jboss</password>
+                            <filename>annotator.war</filename>
+                        </configuration>
+
+                        <!-- Local configuration
+                        <configuration>
+                            <hostname>127.0.0.1</hostname>
+                            <port>9999</port>
+                            <filename>bqi.war</filename>
+                        </configuration>
+                        -->
+
+                    </execution>
+                </executions>
+            </plugin>
+
+
+        </plugins>
+
+    </build>
+
+
+   <distributionManagement>
+        <repository>
+            <uniqueVersion>true</uniqueVersion>
+            <id>ubitech-releases</id>
+            <name>UBITECH release repository</name>
+            <url>http://192.168.1.201:8081/nexus/content/repositories/ubitech-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>ubitech-snapshots</id>
+            <name>UBITECH snapshot repository</name>
+            <url>http://192.168.1.201:8081/nexus/content/repositories/ubitech-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+    <repositories>
+
+<!-- UBITECH Repositories
+        <repository>
+            <id>ubitech-releases</id>
+            <name>UBITECH release repository</name>
+            <url>http://192.168.1.201:8081/nexus/content/repositories/ubitech-releases/</url>
+        </repository>
+        <repository>
+            <id>ubitech-snapshots</id>
+            <name>UBITECH snapshot repository</name>
+            <url>http://192.168.1.201:8081/nexus/content/repositories/ubitech-snapshots/</url>
+        </repository>
+        -->
+
+    </repositories>
+
+</project>

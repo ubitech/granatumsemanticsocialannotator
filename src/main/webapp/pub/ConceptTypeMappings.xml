@@ -1,0 +1,23 @@
+<!-- Concepts: Taking into account Granatum ontology as of 1/3/2012 -->
+<ConceptTypeMappings>
+    <mapping>
+        <type>text</type>
+	<concept>http://chem.deri.ie/granatum/PublishedWork</concept>
+    </mapping>
+    <mapping>
+        <type>application</type>
+	<concept>http://chem.deri.ie/granatum/PublishedWork</concept>
+    </mapping>
+    <mapping>
+        <type>image</type>
+	<concept>http://chem.deri.ie/granatum/Image</concept>
+    </mapping>    
+    <mapping>
+        <type>Article_pro</type>
+	<concept>http://chem.deri.ie/granatum/ForumPost</concept>
+    </mapping>
+    <mapping>
+        <type>default</type>
+	<concept>http://chem.deri.ie/granatum/InformationResource</concept>
+    </mapping>      
+</ConceptTypeMappings>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sparql>
+	<head>
+		<variable name="Drug"/>
+		<variable name="DrugDescription"/>
+		<variable name="MoleculeContains"/>
+		<variable name="MoleculeInformation"/>
+		<variable name="InteractionTarget"/>
+		<variable name="InteractionTargetDescription"/>
+	</head>
+	<results>
+		<result>
+			<binding name="Drug">
+				<uri>DrugURI1</uri>
+			</binding>
+			<binding name="DrugDescription">
+				<literal>DrugDescription1</literal>
+			</binding>
+			<binding name="MoleculeContains">
+				<uri>MoleculeContainsURI1</uri>
+			</binding>
+			<binding name="MoleculeInformation">
+				<literal>MoleculeInformation1</literal>
+			</binding>
+			<binding name="InteractionTarget">
+				<uri>InteractionTargetURI1</uri>
+			</binding>
+			<binding name="InteractionTargetDescription">
+				<literal>InteractionTargetDescription1</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Drug">
+				<uri>DrugURI2</uri>
+			</binding>
+			<binding name="DrugDescription">
+				<literal>DrugDescription2</literal>
+			</binding>
+			<binding name="MoleculeContains">
+				<uri>MoleculeContainsURI2</uri>
+			</binding>
+			<binding name="MoleculeInformation">
+				<literal>MoleculeInformation2</literal>
+			</binding>
+			<binding name="InteractionTarget">
+				<uri>InteractionTargetURI2</uri>
+			</binding>
+			<binding name="InteractionTargetDescription">
+				<literal>InteractionTargetDescription2</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Drug">
+				<uri>DrugURI3</uri>
+			</binding>
+			<binding name="DrugDescription">
+				<literal>DrugDescription3</literal>
+			</binding>
+			<binding name="MoleculeContains">
+				<uri>MoleculeContainsURI3</uri>
+			</binding>
+			<binding name="MoleculeInformation">
+				<literal>MoleculeInformation3</literal>
+			</binding>
+			<binding name="InteractionTarget">
+				<uri>InteractionTargetURI3</uri>
+			</binding>
+			<binding name="InteractionTargetDescription">
+				<literal>InteractionTargetDescription3</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name="Drug">
+				<uri>DrugURI4</uri>
+			</binding>
+			<binding name="DrugDescription">
+				<literal>DrugDescription4</literal>
+			</binding>
+			<binding name="MoleculeContains">
+				<uri>MoleculeContainsURI4</uri>
+			</binding>
+			<binding name="MoleculeInformation">
+				<literal>MoleculeInformation4</literal>
+			</binding>
+			<binding name="InteractionTarget">
+				<uri>InteractionTargetURI4</uri>
+			</binding>
+			<binding name="InteractionTargetDescription">
+				<literal>InteractionTargetDescription4</literal>
+			</binding>
+		</result>
+	</results>
+</sparql>
