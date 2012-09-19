@@ -14,7 +14,7 @@ import org.xml.sax.helpers.DefaultHandler;
  
 public class ConceptTypeMappings
 {
-    private final String path = "http://localhost:8080/SemanticSocialAnnotator/pub/ConceptTypeMappings.xml";
+    private final String path = "http://granatum.ubitech.eu:8080/SemanticSocialAnnotator/pub/ConceptTypeMappings.xml";
     private SAXParserFactory factory;
     private SAXParser saxParser;
     private ConceptTypeSaxHandler handler;
