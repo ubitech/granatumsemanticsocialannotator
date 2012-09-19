@@ -418,7 +418,7 @@ extends HttpServlet
 
         topics+=conceptTypeMappings.getConcept(filemimetype);
         
-        System.out.println(" -FileMimeType=" + filemimetype);
+        System.out.println(" -FileMimeType=" + filemimetype + " " + conceptTypeMappings.getConcept(filemimetype));
         newObjectID = collPlatform.storeAnnotation(objectID, subject, body, topics, replyTo, lbds, accessToken, accessTokenSecret);
         session.setAttribute("suggestions", null);
         
