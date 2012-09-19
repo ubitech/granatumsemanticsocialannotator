@@ -20,7 +20,7 @@ import javax.xml.transform.Source;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-import org.apache.xerces.impl.dtd.models.CMAny;
+//import org.apache.xerces.impl.dtd.models.CMAny;
 
 public class DataCloudSPARQLInterface
 extends DataCloudInterface

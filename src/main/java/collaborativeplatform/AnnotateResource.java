@@ -71,8 +71,6 @@ extends HttpServlet
                 }
                 else if(operation.equals("create")  || (operation.equals("edit")) || (operation.equals("replyto")))
                     this.displayAnnotation(request, response, operation);
-                else if(operation.equals("headers"))                
-                    this.showHeaders(request, response);
                 else if(operation.equals("createAnnotation") || operation.equals("replytoAnnotation"))
                     this.createAnnotation(request, response);
                 else if(operation.equals("editAnnotation"))
@@ -95,7 +93,7 @@ extends HttpServlet
     public void init()
     throws ServletException
     {
-        ce = new CacheEndpoint();
+//        ce = new CacheEndpoint();
         
         userAuth = new UserAuthentication();
 /*        
@@ -327,7 +325,7 @@ extends HttpServlet
 
 
     protected void editAnnotation(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException, XmlRpcException
+    throws ServletException, IOException, XmlRpcException, SQLException
     {
         HttpSession session = request.getSession(true);
         String SIOCdata = null;
@@ -368,12 +366,13 @@ extends HttpServlet
 //        System.out.println(SIOCdata);
 //        session.setAttribute(newObjectID, SIOCdata);
 //        collPlatform.uploadFileFromURL("10210", (newObjectID+".rdf"), "http://94.75.243.141:8080/SemanticSocialAnnotator/AnnotateResource?op=provideSIOC&action=sioc&id="+newObjectID, accessToken, accessTokenSecret);
-        
+
+        ce.close();        
         response.sendRedirect(backObj);        
     }     
       
     protected void createAnnotation(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException, XmlRpcException
+    throws ServletException, IOException, XmlRpcException, SQLException
     {
         HttpSession session = request.getSession(true);
         String SIOCdata = null;
@@ -437,7 +436,8 @@ extends HttpServlet
             this.forwardToPage("/errorPage.jsp?errormsg=Error%20uploading%20sioc%20" + statusCode, request, response);
             return;
         }   
-        
+
+        ce.close();
         response.sendRedirect(backObj);        
     }    
 
@@ -483,6 +483,8 @@ extends HttpServlet
         backObj = request.getParameter("back_obj");
         op = request.getParameter("op");
 
+        ce = new CacheEndpoint();
+        
         if(suggestions!=null)
             suggestions.clear();
         else

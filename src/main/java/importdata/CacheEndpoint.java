@@ -46,6 +46,12 @@ public class CacheEndpoint
         rs.close();
         return hashmap;
     }
+
+    public void close()
+    throws SQLException
+    {
+        db.dbClose();
+    }
     
     public static void main(String[] args)
     {
