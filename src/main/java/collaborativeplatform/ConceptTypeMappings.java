@@ -39,7 +39,7 @@ public class ConceptTypeMappings
         String[] typeParts = type.split("/");
         
         s = handler.getMappings().get(typeParts[0]);
-
+        System.out.println(handler.getMappings());
         if(s==null)
             s = handler.getMappings().get("default");
 
