@@ -100,7 +100,7 @@
             var start = trimmedStr.indexOf("<");
             var end   = trimmedStr.indexOf(">");
 
-            selections += (trimmedStr.split("<", trimmedStr.length)[0].trim()) + "$" + trimmedStr.substr(start+1, end-1) + ",";
+            selections += (trimmedStr.split("<", $.trim(trimmedStr.length)[0])) + "$" + trimmedStr.substr(start+1, end-1) + ",";
         }
 
         document.forms['annotationform'].elements['selections'].value = selections;
