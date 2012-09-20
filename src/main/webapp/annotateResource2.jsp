@@ -265,7 +265,9 @@
 
        <div class="buttons right">            
           <input class="button ok" type="submit" name="_ok_" value="   OK   "/>
+          <!--
           <input class="button cancel" type="submit" name="_cancel_" value=" Cancel " onclick="forwardBackToBSCW()"/>  
+          -->
        </div>
       </div>
     </div>
@@ -280,6 +282,7 @@
     <input type='hidden' name='moreselections'  value='null'/> 
     <input type='hidden' name='objectID'  value='<%= request.getParameter("objectID") %>'>
     <input type='hidden' name='backObj'   value='<%= request.getParameter("back_obj") %>'>
+
 </form>
         
 </div>
