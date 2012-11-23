@@ -119,7 +119,7 @@
 		source: function(req, add){
 					
 			//pass request to server
-			$.getJSON("http://granatum.ubitech.eu:8080/SemanticSocialAnnotator/AnnotateResource?callback=?&op=makeSuggestions&action=makeSuggestions", req, function(data) {
+			$.getJSON("http://granatum.ubitech.eu/granatumannotator/AnnotateResource?callback=?&op=makeSuggestions&action=makeSuggestions", req, function(data) {
 //			$.getJSON("http://localhost:8080/SemanticSocialAnnotator/AnnotateResource?callback=?&op=makeSuggestions&action=makeSuggestions", req, function(data) {							
 			//create array for response objects
         		var suggestions = [];

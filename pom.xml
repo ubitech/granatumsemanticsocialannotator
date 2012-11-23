@@ -2,8 +2,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>annotator.granatum</groupId>
-  <artifactId>annotator</artifactId>
+  <groupId>granatumannotator.granatum</groupId>
+  <artifactId>granatumannotator</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>Granatum Semantic Social Annotator</name>
@@ -92,7 +92,7 @@
   </dependencies>
 
     <build>
-        <finalName>annotator</finalName>
+        <finalName>granatumannotator</finalName>
 
         <plugins>
             <!-- Test plugin -->
@@ -125,12 +125,11 @@
 
                         <!-- patroklos configuration  -->
                         <configuration>
-                            <hostname>192.168.1.201</hostname>
+                            <hostname>192.168.1.202</hostname>
                             <port>9999</port>
-
                             <username>admin</username>
                             <password>jboss</password>
-                            <filename>annotator.war</filename>
+                            <filename>granatumannotator.war</filename>
                         </configuration>
 
                         <!-- Local configuration
@@ -150,7 +149,7 @@
 
     </build>
 
-
+   <!--
    <distributionManagement>
         <repository>
             <uniqueVersion>true</uniqueVersion>
@@ -164,7 +163,7 @@
             <url>http://192.168.1.201:8081/nexus/content/repositories/ubitech-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
-
+    -->
 
     <repositories>
 
